@@ -1,0 +1,4 @@
+apt update;apt install -y python3 python3-pip;apt install -y git
+echo "import os, platform, subprocess; class color: PURPLE, CYAN, DARKCYAN, BLUE, GREEN, YELLOW, RED, BOLD, UNDERLINE, END, CWHITE = ('\033[95m', '\033[96m', '\033[36m', '\033[94m', '\033[92m', '\033[93m', '\033[91m', '\033[1m', '\033[4m', '\033[0m', '\33[37m'); MyOS, Me, WhoAmI = platform.system(), subprocess.Popen(['whoami'], shell=True, stdout=subprocess.PIPE).stdout.read(), subprocess.Popen(['who am i'], shell=True, stdout=subprocess.PIPE).stdout.read().decode().strip().split(); username, terminal_line, login_time, ip_address = WhoAmI[0], WhoAmI[1], ' '.join(WhoAmI[2:5]), WhoAmI[4][1:-1]; print(f'Detected: {color.CYAN}{MyOS}{color.END}\nRunning As: {color.GREEN}{Me}{color.END}\nUsername: {color.GREEN}{username}{color.END}\nTerminal Line: {color.GREEN}{terminal_line}{color.END}\nLogin Time: {color.GREEN}{login_time}{color.END}\nIP Address: {color.GREEN}{ip_address}{color.END}')" >> BlueScreen.py
+
+
